@@ -1,2 +1,1 @@
-# MyWeb
-Final Year Project
+# My Web
