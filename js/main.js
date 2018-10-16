@@ -6,8 +6,9 @@
     /*==================================================================
     [ Validate ]*/
     var name = $('.validate-input input[name="name"]');
-    var email = $('.validate-input input[name="email"]');
-    var subject = $('.validate-input input[name="subject"]');
+    //var email = $('.validate-input input[name="email"]');
+    //var subject = $('.validate-input input[name="subject"]');
+    var location = $('.validate-input input[name="location"]');
     var message = $('.validate-input textarea[name="message"]');
 
 
@@ -19,14 +20,21 @@
             check=false;
         }
 
-        if($(subject).val().trim() == ''){
+    /*  if($(subject).val().trim() == ''){
             showValidate(subject);
             check=false;
         }
+    */
 
 
-        if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+    /*    if($(email).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
             showValidate(email);
+            check=false;
+        }
+    */
+        
+        if($(location).val().trim() == ''){
+            showValidate(location);
             check=false;
         }
 
