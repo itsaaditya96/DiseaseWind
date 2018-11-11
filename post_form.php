@@ -14,12 +14,10 @@
         $sql = "INSERT INTO getintouch (Name, Email, Subject, Location, Message)
         VALUES ('$name','$email','$subject','$location','$message')";
         if (mysqli_query($conn, $sql)) {
-            echo "desfeffef";
             header("Location: ./");
         } 
         else {
             echo("Error description: " . mysqli_error($conn));
         }
-
     }
 ?>
