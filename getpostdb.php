@@ -1,4 +1,4 @@
 <?php
-    $conn = mysqli_connect('den1.mysql6.gear.host','getintouch','getintouch@1234','getintouch')
+    $conn = mysqli_connect('localhost','root','aaditya','myweb')
     or die('Error connecting to MySQL Server.');
 ?>
