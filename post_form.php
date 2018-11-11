@@ -14,6 +14,9 @@
         $sql = "INSERT INTO getintouch (Name, Email, Subject, Location, Message)
         VALUES ('$name','$email','$subject','$location','$message')";
         if (mysqli_query($conn, $sql)) {
+            ?>
+            <script>alert("Success");</script>
+            <?php
             header("Location: ./");
         } 
         else {
