@@ -10,8 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<script src="js/city_out.js"></script>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
@@ -20,6 +26,15 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+
+
+<script>
+	$('document').ready(function () {
+  autocomplete(document.getElementById("location"), cities);                                    
+  });
+	</script>
+
+
 </head>
 <body>
 
@@ -29,7 +44,7 @@
 				<img src="images/img-01.png" alt="IMG">
 			</div>
 
-			<form action="post_form.php" method="POST" class="contact1-form validate-form">
+			<form action="post_form.php" method="POST" autocomplete="off" class="contact1-form validate-form">
 				<span class="contact1-form-title">
 					Get in touch
 				</span>
@@ -50,10 +65,11 @@
 					<input class="input1" type="text" name="subject" placeholder="Subject">
 					<span class="shadow-input1"></span>
 				</div>
-
-				<div class="wrap-input1 validate-input" data-validate = "Location is required">
-					<input class="input1" type="text" name="location" placeholder="Location">
-					<span class="shadow-input1"></span>
+					<div class="autocomplete">
+						<div class="wrap-input1 validate-input" data-validate = "Location is required">
+						<input class="input1" type="text" name="location" id="location" placeholder="Location">
+						<span class="shadow-input1"></span>
+					</div>
 				</div>
 
 				<div class="wrap-input1 validate-input" data-validate = "Message is required">
