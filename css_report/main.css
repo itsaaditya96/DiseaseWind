@@ -129,12 +129,12 @@ th, td {
 }
 
 .column100 {
-  width: 130px;
+  width: 200px;
   padding-left: 25px;
 }
 
 .column100.column1 {
-  width: 265px;
+  width: 150px;
   padding-left: 42px;
 }
 
