@@ -11,7 +11,7 @@
         die("Connection failed: " . mysqli_connect_error());
     }
     else {
-        $sql = "INSERT INTO getintouch (Name, Email, Subject, Location, Message)
+        $sql = "INSERT INTO responses (Name, Email, Subject, Location, Message)
         VALUES ('$name','$email','$subject','$location','$message')";
         if (mysqli_query($conn, $sql)) {
             header("Location: ./");

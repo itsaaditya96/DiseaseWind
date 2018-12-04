@@ -50,7 +50,8 @@
 							</tr>
 						</thead>
 						<tbody>
-							<?php include_once 'report_data.php'; ?>
+						<tr>
+							<?php include 'report_data.php'; ?>
 						</tbody>
 					</table>
 				</div>

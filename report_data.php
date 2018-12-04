@@ -6,7 +6,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-    $sql = "SELECT response_id, Name, Email, Subject, Location, Message, DATE_FORMAT(time,'%M, %Y') as showdate FROM getintouch;";
+    $sql = "SELECT response_id, Name, Email, Subject, Location, Message, DATE_FORMAT(time,'%M, %Y') as showdate FROM responses";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
