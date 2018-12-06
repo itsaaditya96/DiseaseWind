@@ -339,6 +339,10 @@ textarea.input1 + .shadow-input1 {
     padding: 90px 80px 88px 90px;
   }
 
+  .contact1-title {
+    width: 20%
+  }
+
   .contact1-pic {
     width: 35%;
   }
