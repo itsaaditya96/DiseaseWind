@@ -36,7 +36,7 @@
 		<div class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100 ver3 m-b-110" style="overflow-x:auto;">
-				<p align='right'><a href="chart.php">Click here for analysis</a></p>
+<!-- 				<p align='right'><a href="chart.php">Click here for analysis</a></p> -->
 					<table data-vertable="ver3">
 						<thead>
 							<tr class="row100 head">
